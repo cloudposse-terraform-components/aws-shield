@@ -2,7 +2,7 @@
 _extends: .github
 repository:
   name: aws-shield
-  description: 'This component is responsible for enabling AWS Shield Advanced Protection for the following resources:  - Application Load Balancers (ALBs) - CloudFront Distributions - Elastic IPs - Route53 Hosted Zones  This component assumes that resources it is configured to protect are not already protected by other components that have their `xxx_aws_shield_protection_enabled` variable set to `true`'
+  description: This component is responsible for enabling AWS Shield Advanced Protection for the following resources:  Application Load Balancers (ALBs), CloudFront Distributions, Elastic IPs, Route53 Hosted Zones
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
 
