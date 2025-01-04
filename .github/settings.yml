@@ -5,5 +5,3 @@ repository:
   description: "This component is responsible for enabling AWS Shield Advanced Protection for the following resources: Application Load Balancers (ALBs), CloudFront Distributions, Elastic IPs, Route53 Hosted Zones"
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
-
-
