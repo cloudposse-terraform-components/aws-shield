@@ -19,7 +19,6 @@ have their `xxx_aws_shield_protection_enabled` variable set to `true`.
 
 This component also requires that the account where the component is being provisioned to has been
 [subscribed to AWS Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/enable-ddos-prem.html).
-
 ## Usage
 
 **Stack Level**: Global or Regional
@@ -93,7 +92,10 @@ Shield Advanced functionality instead. This leads to more simplified inter-compo
 for maintaining the provisioning order during a cold-start.
 
 <!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- prettier-ignore-end -->
+
+
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -167,12 +169,17 @@ for maintaining the provisioning order during a cold-start.
 | <a name="output_cloudfront_distribution_protections"></a> [cloudfront\_distribution\_protections](#output\_cloudfront\_distribution\_protections) | AWS Shield Advanced Protections for CloudFront Distributions |
 | <a name="output_elastic_ip_protections"></a> [elastic\_ip\_protections](#output\_elastic\_ip\_protections) | AWS Shield Advanced Protections for Elastic IPs |
 | <a name="output_route53_hosted_zone_protections"></a> [route53\_hosted\_zone\_protections](#output\_route53\_hosted\_zone\_protections) | AWS Shield Advanced Protections for Route53 Hosted Zones |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
 
 ## References
 
-- [cloudposse/terraform-aws-components](https://github.com/cloudposse/terraform-aws-components/tree/main/modules/aws-shield) -
-  Cloud Posse's upstream component
+
+- [cloudposse-terraform-components](https://github.com/orgs/cloudposse-terraform-components/repositories) - Cloud Posse's upstream component
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-shield&utm_content=)
+
