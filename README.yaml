@@ -28,6 +28,14 @@ description: |-
 
   This component configures **AWS Shield Advanced** protection for specific resources.
 
+  ## Component Features
+
+  - **Multi-Resource Protection**: Protects ALBs, CloudFront Distributions, Elastic IPs, and Route53 Hosted Zones
+  - **Auto-Discovery**: Automatically discovers ALB names from EKS ALB controller via remote state
+  - **Global and Regional**: Supports both global (Route53, CloudFront) and regional (ALB, EIP) resource protection
+  - **Account Verification**: Optional safety check that validates Terraform is running in the correct AWS account
+  - **Flexible Account Map**: Supports both remote-state account-map lookups (default) and static account map variables
+
   ## Prerequisites
 
   This component requires that the account where it is being provisioned has been
