@@ -34,7 +34,7 @@ description: |-
   - **Auto-Discovery**: Automatically discovers ALB names from EKS ALB controller via remote state
   - **Global and Regional**: Supports both global (Route53, CloudFront) and regional (ALB, EIP) resource protection
   - **Account Verification**: Optional safety check that validates Terraform is running in the correct AWS account
-  - **Flexible Account Map**: Supports both remote-state account-map lookups (default) and static account map variables
+  - **Flexible Account Map**: Supports both remote-state account-map lookups and static account map variables (default)
 
   ## Prerequisites
 
