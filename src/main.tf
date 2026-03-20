@@ -1,8 +1,10 @@
 locals {
-  enabled = module.this.enabled
-  tags    = module.this.tags
+  enabled     = module.this.enabled
+  tags        = module.this.tags
+  account_map = module.account_map.outputs.full_account_map
 
-  account_id = one(data.aws_caller_identity.current[*].account_id)
+  account_id         = one(data.aws_caller_identity.current[*].account_id)
+  current_account_id = local.account_id
 
   # Used to determine correct partition (i.e. - `aws`, `aws-gov`, `aws-cn`, etc.)
   partition = one(data.aws_partition.current[*].partition)
